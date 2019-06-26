@@ -1,0 +1,4 @@
+[submodule "library-su19"]
+	path = library-su19
+	url = https://github.com/cs61bl/library-su19
+	branch = master
