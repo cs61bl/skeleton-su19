@@ -19,7 +19,7 @@ class Permutation {
     }
 
     /** Return the value of P modulo the size of this permutation. */
-    private final int wrap(int p) {
+    final int wrap(int p) {
         int r = p % size();
         if (r < 0) {
             r += size();
@@ -71,4 +71,17 @@ class Permutation {
     // FIXME - How do we store which letter permutes/inverts to which?
 
     // FIXME: ADDITIONAL FIELDS HERE, AS NEEDED
+
+    // Some starter code for unit tests. Feel free to change these up!
+    // To run this through command line, from the proj0 directory, run the following:
+    // javac enigma/Permutation.java enigma/Alphabet.java enigma/CharacterRange.java enigma/EnigmaException.java
+    // java enigma/Permutation
+    public static void main(String[] args) {
+        Permutation perm = new Permutation("(ABCDEFGHIJKLMNOPQRSTUVWXYZ)", new CharacterRange('A', 'Z'));
+        System.out.println(perm.size() == 26);
+        System.out.println(perm.permute('A') == 'B');
+        System.out.println(perm.invert('B') == 'A');
+        System.out.println(perm.permute(0) == 1);
+        System.out.println(perm.invert(1) == 0);
+    }
 }
