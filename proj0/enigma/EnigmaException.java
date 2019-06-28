@@ -5,10 +5,10 @@ package enigma;
  *  exception, with the message being the error message to be printed.
  *  @author P. N. Hilfinger
  */
-class EnigmaException extends RuntimeException {
+public class EnigmaException extends RuntimeException {
 
     /** An exception whose getMessage() value is MSG. */
-    EnigmaException(String msg) {
+    public EnigmaException(String msg) {
         super(msg);
     }
 

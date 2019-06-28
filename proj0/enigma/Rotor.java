@@ -5,10 +5,10 @@ import static enigma.EnigmaException.*;
 /** Superclass that represents a rotor in the enigma machine.
  *  @author
  */
-class Rotor {
+public class Rotor {
 
     /** A rotor named NAME whose permutation is given by PERM. */
-    Rotor(String name, Permutation perm) {
+    public Rotor(String name, Permutation perm) {
         _name = name;
         _permutation = perm;
         // FIXME - Assign any additional instance variables.

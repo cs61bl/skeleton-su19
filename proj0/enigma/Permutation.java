@@ -6,14 +6,14 @@ import static enigma.EnigmaException.*;
  *  to the characters of an alphabet.
  *  @author
  */
-class Permutation {
+public class Permutation {
 
     /** Set this Permutation to that specified by CYCLES, a string in the
      *  form "(cccc) (cc) ..." where the c's are characters in ALPHABET, which
      *  is interpreted as a permutation in cycle notation.  Characters in the
      *  alphabet that are not included in any cycle map to themselves.
      *  Whitespace is ignored. */
-    Permutation(String cycles, Alphabet alphabet) {
+    public Permutation(String cycles, Alphabet alphabet) {
         _alphabet = alphabet;
         // FIXME - Assign any additional instance variables.
     }

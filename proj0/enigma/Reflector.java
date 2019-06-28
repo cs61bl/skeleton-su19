@@ -5,11 +5,11 @@ import static enigma.EnigmaException.*;
 /** Class that represents a reflector in the enigma.
  *  @author
  */
-class Reflector extends FixedRotor {
+public class Reflector extends FixedRotor {
 
     /** A non-moving rotor named NAME whose permutation at the 0 setting
      * is PERM. */
-    Reflector(String name, Permutation perm) {
+    public Reflector(String name, Permutation perm) {
         super(name, perm);
         // FIXME? - Assign any additional instance variables.
     }
@@ -27,7 +27,7 @@ class Reflector extends FixedRotor {
     }
 
     @Override // Use this special tag when updating the behavior of a method this class inherits from FixedRotor
-    void set(int posn) {
+    public void set(int posn) {
         super.set(0);
     }
 

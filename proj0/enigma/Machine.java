@@ -5,12 +5,12 @@ import static enigma.EnigmaException.*;
 /** Class that represents a complete enigma machine.
  *  @author
  */
-class Machine {
+public class Machine {
 
     /** A new Enigma machine with alphabet ALPHA, 1 < NUMROTORS rotor slots,
      *  and 0 <= PAWLS < NUMROTORS pawls. ALLROTORS contains all the
      *  available rotors. */
-    Machine(Alphabet alpha, int numRotors, int pawls,
+    public Machine(Alphabet alpha, int numRotors, int pawls,
             Rotor[] allRotors) {
         _alphabet = alpha;
         // FIXME - Assign any additional instance variables.
@@ -80,7 +80,7 @@ class Machine {
     // java enigma/Machine
     public static void main(String[] args) {
 
-        Alphabet upper = new CharacterRange('A', 'Z');
+        CharacterRange upper = new CharacterRange('A', 'Z');
         MovingRotor rotorI = new MovingRotor("I",
                 new Permutation("(AELTPHQXRU) (BKNW) (CMOY) (DFG) (IV) (JZ) (S)", upper),
                 "Q");

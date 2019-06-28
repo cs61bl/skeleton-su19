@@ -6,11 +6,11 @@ import static enigma.EnigmaException.*;
  *  order.
  *  @author P. N. Hilfinger
  */
-class CharacterRange extends Alphabet {
+public class CharacterRange extends Alphabet {
 
     /** An alphabet consisting of all characters between FIRST and LAST,
      *  inclusive. */
-    CharacterRange(char first, char last) {
+    public CharacterRange(char first, char last) {
         _first = Character.toUpperCase(first);
         _last = Character.toUpperCase(last);
         if (_first > _last) {
